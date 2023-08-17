@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Cursos gratis de IA</title>
+    <link rel="shortcut icon" href="img/logo.jpeg">
+  </head>
+  <body class="bg-slate-950">
+    <!-- Navbar -->
+    <nav class="relative container mx-auto p-6">
+      <!-- Flex container -->
+      <div class="flex items-center justify-between">
+        <!-- Logo -->
+        <a href="/" class="pt-2">
+          <span class="text-3xl text-white"> <span class="text-amber-500">>></span> Pragmatic<span class="text-amber-400">Crow </span></span>
+        </a>
+        <!-- Menu Items -->
+        <div class="hidden space-x-6 md:flex px-10">
+          <a href="/newslater" class="text-slate-300 hover:text-darkGrayishBlue">Newslater</a>
+          <a href="/portafolio" class="text-slate-300 hover:text-darkGrayishBlue">Portafolio</a>
+          <a href="/nosotros" class="text-slate-300 hover:text-darkGrayishBlue">Nosotros</a>
+        </div>
+        <!-- Button -->
+        <a target="_blank"
+          href="https://discord.com/channels/@me/1140819768522322030"
+          class="hidden  p-3 px-6 pt-2 text-white bg-amber-500 rounded-full baseline hover:bg-amber-400 md:block">
+          Contáctanos
+        </a>
+
+        <!-- Hamburger Icon -->
+        
+        <button
+          id="menu-btn"
+          class="m-5 block hamburger md:hidden focus:outline-none">
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div class="md:hidden">
+        <div
+          id="menu-menu"
+          class="flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-slate-800 text-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+          <a href="/newslater" class="hover:text-slate-400">Newslater</a>
+          <a href="/portafolio" class="hover:text-slate-400">Portafolio</a>
+          <a href="/nosotros" class="hover:text-slate-400 hover:">Nosotros </a>
+          <a target="_blank"
+            href="https://discord.com/channels/@me/1140819768522322030"
+            class="p-3 px-6 pt-2 text-white bg-amber-500 rounded-full baseline hover:bg-amber-400 md:block">
+            Contáctanos
+          </a>
+        </div>
+      </div>
+      <script>
+        const boton = document.querySelector('#menu-btn');
+        const menu = document.querySelector('#menu-menu');
+
+        boton.addEventListener('click', () => {
+            menu.classList.toggle('hidden')
+            boton.classList.toggle('open')
+            menu-menu.classList.toggle('flex')
+        })
+      </script>
+    </nav>
+    <hr>
+  </body>
+<html/>
